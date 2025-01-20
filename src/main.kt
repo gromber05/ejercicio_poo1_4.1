@@ -11,11 +11,11 @@ class Rectangulo(val base: Int, val altura: Int) {
         return "Base = ${this.base}, Altura = ${this.altura}"
     }
 
-    fun calcularPerimetro(base: Int, altura: Int): Int {
+    fun calcularPerimetro(): Int {
         return ((base + altura) * 2)
     }
 
-    fun calcularArea(base: Int, altura: Int): Int {
+    fun calcularArea(): Int {
         return (base * altura)
     }
 }
@@ -24,4 +24,8 @@ fun main() {
 
     val rectangulos = mutableListOf<Rectangulo>()
 
+    val rectangulo1 = Rectangulo(1, 1)
+
+    println(rectangulo1.calcularArea())
+    println(rectangulo1.calcularPerimetro())
 }
